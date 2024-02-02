@@ -36,3 +36,62 @@ The proposed approach for trajectory tracking involves several key steps and com
   <em>Figure 1: Control Block Diagrams for the turtlebot3 trajectory tracking  </em>
 <!-- <p align="center">
 </p> -->
+
+## Experimental Setup
+
+### TurtleBot3: 
+- A low-cost, personal robot kit with open-source software.
+- Designed for easy assembly and uses off-the-shelf consumer products.
+- Capable of real-time obstacle avoidance, autonomous navigation, and SLAM.
+- Components include DYNAMIXEL servos, Raspberry Pi board, Lidar sensor, Open CR, microSD card, and Lithium-polymer battery.
+
+### Raspberry Pi 3:
+
+- A small single-board computer used for real-time image/video processing, IoT applications, and robotics.
+- Runs on Raspbian OS and provides access to GPIOs for connecting devices like LEDs, motors, and sensors.
+
+### OpenCR:
+
+- Open-source control module for ROS embedded systems.
+- Utilizes the STM32F7 series chip for powerful ARM Cortex-M7 processing.
+- Development environment compatible with Arduino IDE and Scratch.
+
+### Dynamixel Servos:
+
+- Specifically, the Dynamixel XM430-W350 T/R servomotor is employed.
+- A smart robot-exclusive actuator with integrated components like DC motor, reduction gearbox, controller, pilot, and network.
+
+### ROS (Robot Operating System):
+
+- ROS is a framework for developing robot software.
+- Comprises code and tools facilitating the development of robotic applications.
+- Utilizes a publish/subscribe model with nodes communicating through topics.
+
+#### ROS Computation:
+
+- Raspberry Pi acts as the master in the publish/subscribe routine.
+- Establishes a wireless connection between ROS and Raspberry Pi for code and data sharing.
+- Involves nodes such as odometry and motors for information exchange.
+
+<p align="center">
+<img src="Figures/ROS_diag.JPG"/>
+</p>
+  <em>Figure 2: ROS Master communication  </em>
+<!-- <p align="center">
+</p> -->
+### Code & Algorithm:
+
+- Feedback control algorithm with TurtleBot3 as the plant, PID controller, and odometry sensor as the feedback element.
+- Introduced a time delay block to enhance trajectory smoothness.
+- The heading angle of TurtleBot3 is determined using the slope of two successive points.
+- PID controller computes linear and angular velocities based on the error signal.
+The algorithm flow chart depicts the overall process, including ROS communication and trajectory tracking.
+
+<p align="center">
+<img src="Figures/trajectory-tracking.png"/>
+</p>
+  <em>Figure 3: Flow chart of the code that used for trajectory tracking  </em>
+<!-- <p align="center">
+</p> -->
+
+
