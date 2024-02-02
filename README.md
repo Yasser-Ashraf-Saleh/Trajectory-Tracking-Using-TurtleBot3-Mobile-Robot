@@ -106,21 +106,76 @@ The algorithm was tested on four case studies: Line, Circle, Lemniscate, and Sin
 * Increasing both integral and proportional parts reduced steady-state error but increased overshooting.
 * Increasing the differential part improved trajectory smoothness and reduced overshooting.
 
+<p align="center">
+<img src="Figures/line_1.JPG"/>
+</p>
+  <em>Figure 4: Left-Line trajectory with parameters KPp=10 KIp=1 KDp=0 and KPo=2, KIo=0 KDo=0 ---- Right- Line trajectory with parameters KPp=10  KIp=1 KDp=0.2 and KPo=2, KIo=0 KDo=0 </em>
+<!-- <p align="center">
+</p> -->
+
+<p align="center">
+<img src="Figures/line_2.JPG"/>
+</p>
+  <em>Figure 5: Left- Line trajectory with parameters KPp=10 KIp=2 KDp=0.2 and KPo=2, KIo=0 KDo=0 ---- Right- Line trajectory with parameters KPp=10 KIp=3 KDp=0.2 and KPo=2, KIo=0 KDo=0   </em>
+<!-- <p align="center">
+</p> -->
+
 ### Circle Trajectory:
 
 * Similar observations were made regarding the effects of PID parameters on steady-state error, overshooting, and trajectory smoothness.
 * Increasing the integral part decreased steady-state error but increased overshooting.
 * Increasing the differential part improved trajectory smoothness and reduced overshooting.
 
+<p align="center">
+<img src="Figures/circle_1.JPG"/>
+</p>
+  <em>Figure 6: Left-Circle trajectory with parameters KPp=8 KIp=2 KDp=0.2 and KPo=2, KIo=0 KDo=0 ---- Right- Circle trajectory with parameters KPp=10 KIp=2  KDp=0.2 and KPo=2, KIo=0 KDo=0 </em>
+<!-- <p align="center">
+</p> -->
+
+<p align="center">
+<img src="Figures/circle_2.JPG"/>
+</p>
+  <em>Figure 7: Left- Circle trajectory with parameters KPp=10 KIp=3  KDp=0.2 and KPo=2, KIo=0 KDo=0  ---- Right- Circle trajectory with parameters KPp=10 KIp=3 KDp=0.5 and KPo=2, KIo=0 KDo=0  </em>
+<!-- <p align="center">
+</p> -->
+
 ### Sine Trajectory:
 
 * Increasing integral, differential, and proportional parts decreased steady-state error and improved curve smoothness.
 * Adjusting PID parameters affected the trajectory's steady state and smoothness.
 
+<p align="center">
+<img src="Figures/sine 1.JPG"/>
+</p>
+  <em>Figure 8: Left-Sine trajectory with parameters KPp=10 KIp=10 KDp=0.2 and KPo=4, KIo=0.5 KDo=0  ---- Right- Sine trajectory with parameters KPp=16 KIp=16 KDp=0 and KPo=3, KIo=0 KDo=0  </em>
+<!-- <p align="center">
+</p> -->
+
+<p align="center">
+<img src="Figures/Sine2.JPG"/>
+</p>
+  <em>Figure 9: Left- Sine trajectory with parameters KPp=15 KIp=15 KDp=0 and KPo=3, KIo=0 KDo=0   ---- Right- Sine trajectory with parameters KPp=16 KIp=16 KDp=1 and KPo=3, KIo=0 KDo=0  </em>
+<!-- <p align="center">
+</p> -->
+
 ### Lemniscate Trajectory:
 
 * Increasing integral and proportional parts decreased steady-state error but increased overshooting and settling time.
 * Increasing the differential part attenuated the effects of integral and proportional parts on the trajectory.
+<p align="center">
+<img src="Figures/lemntiscate.JPG"/>
+</p>
+  <em>Figure 10: Lemniscate trajectory with parameters KPp=16 KIp=16 KDp=0.2 and KPo=3, KIo=0 KDo=0   ---- Right- Lemniscate trajectory with parameters KPp=14 KIp=14 KDp=0.5 and KPo=3, KIo=0 KDo=0   </em>
+<!-- <p align="center">
+</p> -->
+
+<p align="center">
+<img src="Figures/Lemniscate2.JPG"/>
+</p>
+  <em>Figure 11: Left- Lemniscate trajectory with parameters KPp=14 KIp=14 KDp=1 and KPo=3, KIo=0 KDo=0   ---- Lemniscate trajectory with parameters KPp=16 KIp=16 KDp=1.5 and KPo=3, KIo=0 KDo=0  </em>
+<!-- <p align="center">
+</p> -->
 
 ### Overall Observations:
 
