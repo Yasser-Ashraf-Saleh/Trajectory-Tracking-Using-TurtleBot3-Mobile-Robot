@@ -79,6 +79,7 @@ The proposed approach for trajectory tracking involves several key steps and com
   <em>Figure 2: ROS Master communication  </em>
 <!-- <p align="center">
 </p> -->
+
 ### Code & Algorithm:
 
 - Feedback control algorithm with TurtleBot3 as the plant, PID controller, and odometry sensor as the feedback element.
@@ -94,4 +95,35 @@ The algorithm flow chart depicts the overall process, including ROS communicatio
 <!-- <p align="center">
 </p> -->
 
+## Results:
 
+The algorithm was tested on four case studies: Line, Circle, Lemniscate, and Sine trajectories. The efficiency of the proposed approach using a PID controller was evaluated.
+
+### Line Trajectory
+
+* Increasing the integral part of the position decreased steady-state error but increased overshooting.
+* Increasing the differential part resulted in a smoother trajectory, reducing overshooting.
+* Increasing both integral and proportional parts reduced steady-state error but increased overshooting.
+* Increasing the differential part improved trajectory smoothness and reduced overshooting.
+
+### Circle Trajectory:
+
+* Similar observations were made regarding the effects of PID parameters on steady-state error, overshooting, and trajectory smoothness.
+* Increasing the integral part decreased steady-state error but increased overshooting.
+* Increasing the differential part improved trajectory smoothness and reduced overshooting.
+
+### Sine Trajectory:
+
+* Increasing integral, differential, and proportional parts decreased steady-state error and improved curve smoothness.
+* Adjusting PID parameters affected the trajectory's steady state and smoothness.
+
+### Lemniscate Trajectory:
+
+* Increasing integral and proportional parts decreased steady-state error but increased overshooting and settling time.
+* Increasing the differential part attenuated the effects of integral and proportional parts on the trajectory.
+
+### Overall Observations:
+
+* The integral part influenced steady-state error, while the differential part affected trajectory smoothness and overshooting.
+* Adjusting proportional, integral, and differential parts had trade-offs in terms of steady-state error, overshooting, and settling time.
+* Increasing PID parameters generally improved trajectory tracking but required careful tuning.
